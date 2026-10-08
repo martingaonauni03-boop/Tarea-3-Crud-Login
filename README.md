@@ -1,87 +1,40 @@
-# Sistema de Gestión de Productos con Flask
+# Sistema CRUD con Flask
 
 ## Descripción
-Aplicación web desarrollada en Python utilizando Flask y el patrón de arquitectura MVC (Modelo-Vista-Controlador). Permite administrar productos mediante operaciones CRUD y cuenta con un sistema de inicio de sesión.
+Este proyecto consiste en una aplicación web desarrollada en Python con Flask. Se utilizó el patrón MVC 
+para organizar el código y SQLite para guardar la información.
 
-## Funcionalidades
+## Funciones
 - Inicio y cierre de sesión.
-- Autenticación con contraseñas almacenadas mediante hash.
-- Protección de rutas mediante sesiones.
-- Registro de nuevos productos.
+- Registro de productos.
 - Visualización de productos.
-- Edición de productos existentes.
-- Eliminación de productos con confirmación.
-- Almacenamiento de información en SQLite.
+- Edición y eliminación de productos.
+- Protección de páginas mediante sesiones.
+- Contraseñas almacenadas con hash.
 
 ## Tecnologías utilizadas
-- Python
-- Flask
+- Python y Flask
 - SQLite
-- HTML
-- CSS
-- Jinja2
-- Werkzeug
+- HTML y CSS
 
-## Arquitectura MVC
-- **Modelo:** archivos de la carpeta `models/`, encargados del acceso a la base de datos.
-- **Vista:** archivos HTML de la carpeta `templates/`, encargados de presentar la interfaz.
-- **Controlador:** archivos de la carpeta `controllers/`, encargados de procesar las solicitudes y conectar modelos y vistas.
+## Ejecución
+Para ejecutar el proyecto se deben instalar las dependencias:
 
-## Instalación y ejecución
+`pip install -r requirements.txt`
 
-1. Clonar el repositorio.
-2. Abrir la carpeta del proyecto en una terminal.
-3. Crear un entorno virtual:
+Después, ejecutar:
 
-```bash
-python -m venv venv
-```
+`python app.py`
 
-4. Activar el entorno virtual en Windows PowerShell:
+Finalmente, ingresar desde el navegador a:
 
-```powershell
-.\venv\Scripts\Activate.ps1
-```
+`http://127.0.0.1:5000/`
 
-5. Instalar las dependencias:
+## Usuario de prueba
+Usuario: admin  
+Contraseña: 1234
 
-```bash
-python -m pip install -r requirements.txt
-```
-
-6. Ejecutar la aplicación:
-
-```bash
-python app.py
-```
-
-7. Abrir en el navegador:
-
-```text
-http://127.0.0.1:5000/
-```
-
-La base de datos SQLite y el usuario administrador de demostración se crean automáticamente durante el primer inicio.
-
-## Acceso de demostración
-- **Usuario:** admin
-- **Contraseña:** 1234
-
-Estas credenciales se utilizan únicamente con fines académicos y de demostración.
-
-## Estructura del proyecto
-
-```text
-flask_crud_login/
-├── app.py
-├── controllers/
-├── models/
-├── templates/
-├── static/
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
-## Consideraciones
-Este proyecto fue desarrollado con fines académicos. Para utilizarlo en producción sería necesario configurar una clave secreta segura, desactivar el modo de depuración y reforzar las medidas de seguridad.
+## Estructura MVC
+Modelo: maneja la información de la base de datos.
+Vista: muestra las páginas HTML.
+Controlador: maneja las rutas y las funciones del sistema.
