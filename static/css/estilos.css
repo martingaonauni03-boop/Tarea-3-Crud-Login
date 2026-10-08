@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    color: #1e3a5f;
+    text-align: center;
+}
+
+h2 {
+    color: #2c5282;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+.login-form {
+    max-width: 350px;
+    margin: 30px auto;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.login-form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.mensaje-error {
+    color: #dc2626;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-producto {
+    max-width: 450px;
+    margin: 25px auto;
+}
+
+.form-producto label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-producto input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.form-producto button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.enlace-volver {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
